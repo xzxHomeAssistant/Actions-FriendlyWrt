@@ -18,7 +18,7 @@ EOL
 (cd friendlywrt/package && {
     git clone https://github.com/destan19/OpenAppFilter.git --depth 1 -b master
 })
-echo "CONFIG_PACKAGE_luci-app-oaf=y" >> >> configs/rockchip/01-nanopi
+echo "CONFIG_PACKAGE_luci-app-oaf=y" >> configs/rockchip/01-nanopi
 # }}
 
 # {{ Add luci-theme-argon
