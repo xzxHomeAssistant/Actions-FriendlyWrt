@@ -14,11 +14,18 @@ CONFIG_PACKAGE_smartmontools=y
 EOL
 # }}
 
-# {{ Add luci-app-oaf
+## {{ Add luci-app-oaf
+#(cd friendlywrt/package && {
+#    git clone https://github.com/destan19/OpenAppFilter.git --depth 1 -b master
+#})
+#echo "CONFIG_PACKAGE_luci-app-oaf=y" >> configs/rockchip/01-nanopi
+## }}
+
+# {{ Add luci-app-homeproxy
 (cd friendlywrt/package && {
-    git clone https://github.com/destan19/OpenAppFilter.git --depth 1 -b master
+    git clone https://github.com/immortalwrt/homeproxy.git --depth 1 -b dev
 })
-echo "CONFIG_PACKAGE_luci-app-oaf=y" >> configs/rockchip/01-nanopi
+echo "CONFIG_PACKAGE_luci-app-homeproxy=y" >> configs/rockchip/01-nanopi
 # }}
 
 # {{ Add luci-theme-argon
